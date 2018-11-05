@@ -3,6 +3,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Profile from './profiles/profile';
 import Footer from './footer';
+import './sections.css';
+import './header.css';
 
 library.add(fab)
 
@@ -25,16 +27,16 @@ class App extends Component {
   render() {
     return (
       <div style={mainStyles}>
-        <header style={headerStyles}>
+        <header class="header" style={headerStyles}>
           <h2>Project Hydro Header</h2>
           <p>have some dope graphic here</p>
         </header>
 
-        <section>
+        <section class="sections">
           <h2>About project hydro</h2>
         </section>
 
-        <section>
+        <section class="sections">
           <h2>Team Members</h2>
           <div style={headerStyles} id="cards">
             <Profile
