@@ -56,6 +56,15 @@ class App extends Component {
               github="https://github.com/noahhydro"
               photoName = "noah.png"
             />
+            <Profile
+              name = "Shane Hampton"
+              linkedIn="https://www.linkedin.com/in/shane-hampton-a9689b49/"
+              email="shane@hydrogenplatform.com"
+              twitter="https://twitter.com/citizenshane_"
+              github="https://github.com/shanehampton"
+              photoName = "shane.png"
+              background = "hexagons.png"
+            />
           </div>
         </section>
 

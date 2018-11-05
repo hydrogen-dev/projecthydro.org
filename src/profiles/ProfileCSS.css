@@ -17,7 +17,7 @@
 	transition: .1s ease-in-out;
 }
 
-	.card:first-of-type{
+	.card{
 		margin-right: 25px;
 	}
 
