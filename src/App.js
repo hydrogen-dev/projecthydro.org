@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Profile from './profiles/profile';
+import Footer from './footer';
 
 library.add(fab)
 
@@ -13,7 +14,6 @@ const mainStyles = {
   display: "block"
 }
 const headerStyles = {
-  // height: "100vh",
   width: '100%',
   margin: 0,
   padding: 0,
@@ -57,9 +57,7 @@ class App extends Component {
           </div>
         </section>
 
-        <footer>
-          <p>Footer</p>
-        </footer>
+        <Footer />
 
       </div>
     );
