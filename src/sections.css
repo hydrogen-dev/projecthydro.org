@@ -9,3 +9,28 @@
 	align-items: center;
 	justify-content: center;
 }
+
+/* .nav-bar-div {
+	vertical-align: middle;
+	float: none;
+} */
+
+.nav-bar-ul {
+	margin-top: 0;
+	justify-content: center;
+  display: flex;
+	list-style-type: none;
+	background-color: #FFFFFF;
+}
+
+.nav-bar-ul li  {
+	width: 100px;
+	margin: auto;
+	justify-content: center;
+  display: flex;
+}
+
+/* .nav-bar-ul a {
+		margin-right: auto;
+	  margin-left: auto;
+} */

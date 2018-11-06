@@ -18,7 +18,8 @@
 }
 
 	.card{
-		margin-right: 25px;
+
+		margin: 15px;
 	}
 
 	.card:hover{
