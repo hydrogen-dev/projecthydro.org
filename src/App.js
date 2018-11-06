@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Profile from './profiles/Profile';
+import NavBar from './nav-bar/NavBar';
 import Footer from './Footer';
 import './sections.css';
 
@@ -30,35 +31,11 @@ class App extends Component {
   render() {
     return (
       <div style={mainStyles}>
-        <div>
-          <ul className="nav-bar">
-            <li>
-              <a href="/roadmap">
-                Roadmap
-              </a>
-            </li>
-            <li>
-              <a href="/team">
-                Team
-              </a>
-            </li>
-            <li>
-              <img src={`${process.env.PUBLIC_URL}/logo.gif`} alt="Project Hydro Logo" height="100" width="100" />
-            </li>
-            <li>
-              <a href="/documentation">
-                Docs
-              </a>
-            </li>
-            <li>
-              <a href="/events">
-                Events
-              </a>
-            </li>
-          </ul>
+          <NavBar />
+          
           <h2 style={{width: "100%", textAlign: "center"}}>Project Hydro</h2>
           <section className="sections">
-            
+
           </section>
 
           <h2 style={{width: "100%", textAlign: "center"}}>Core Contributors</h2>
@@ -96,7 +73,6 @@ class App extends Component {
 
           <Footer />
 
-        </div>
       </div>
     );
   }
