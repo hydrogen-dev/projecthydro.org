@@ -11,7 +11,7 @@ const mainStyles = {
   height: "100vh",
   width: '100%',
   margin: 0,
-  padding: 0,
+  paddingTop: 130,
   display: "block"
 }
 
@@ -47,7 +47,7 @@ class App extends Component {
             </li>
             <li>
               <a href="/documentation">
-                Documentation
+                Docs
               </a>
             </li>
             <li>
@@ -58,7 +58,7 @@ class App extends Component {
           </ul>
           <h2 style={{width: "100%", textAlign: "center"}}>Project Hydro</h2>
           <section className="sections">
-
+            
           </section>
 
           <h2 style={{width: "100%", textAlign: "center"}}>Core Contributors</h2>
