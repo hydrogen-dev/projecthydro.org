@@ -1,6 +1,6 @@
 {
   "name": "project-hydro-website",
-  "homepage": "https://hydrogen-dev.github.io/project-hydro-website",
+  "homepage": "https://projecthydro.org",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

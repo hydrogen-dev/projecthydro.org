@@ -4,6 +4,8 @@
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-
 	padding: 55px 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
