@@ -22,12 +22,12 @@
 	}
 
 	.card:hover{
-		margin-top: -25px;
+		margin-top: -15px;
 		box-shadow: 0 15px 20px rgba(0,0,0,0.1);
 	}
 
 .card_Banner{
-	height: 117px;
+	height: 110px;
 	width: inherit;
 	padding-top: 35px;
 	background-color: #FAFAFA;
@@ -63,7 +63,7 @@ h3, a, i{
 
 	a{
 		display: block;
-		padding: 5px 0px;
+		padding: 5px 5px;
 		font-size: 14px;
 		color: #9E9E9E;
 		text-decoration: none;

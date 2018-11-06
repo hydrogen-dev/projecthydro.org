@@ -30,16 +30,17 @@ class App extends Component {
   render() {
     return (
       <div style={mainStyles}>
-        <section class="sections">
-          <h2>Project Hydro Header</h2>
+        <section className="sections">
+          <img src={`${process.env.PUBLIC_URL}/logo.gif`} alt="Project Hydro Logo" height="100" width="100" />
         </section>
 
-        <section class="sections">
-          <h2>About Project Hydro</h2>
+        <h2 style={{width: "100%", textAlign: "center"}}>About Project Hydro</h2>
+        <section className="sections">
         </section>
 
-        <section class="sections">
-          <div style={headerStyles} id="cards">
+        <h2 style={{width: "100%", textAlign: "center"}}>Core Contributors</h2>
+        <section className="sections">
+          <div style={{...headerStyles, flex: 1}} id="cards">
             <Profile
               name = "Andy Chorlian"
               linkedIn="https://www.linkedin.com/in/achorlia/"
