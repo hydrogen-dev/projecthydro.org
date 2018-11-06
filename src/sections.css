@@ -10,12 +10,7 @@
 	justify-content: center;
 }
 
-/* .nav-bar-div {
-	vertical-align: middle;
-	float: none;
-} */
-
-.nav-bar-ul {
+.nav-bar {
 	margin-top: 0;
 	justify-content: center;
   display: flex;
@@ -23,14 +18,9 @@
 	background-color: #FFFFFF;
 }
 
-.nav-bar-ul li  {
+.nav-bar li  {
 	width: 100px;
 	margin: auto;
 	justify-content: center;
   display: flex;
 }
-
-/* .nav-bar-ul a {
-		margin-right: auto;
-	  margin-left: auto;
-} */

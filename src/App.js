@@ -30,27 +30,27 @@ class App extends Component {
   render() {
     return (
       <div style={mainStyles}>
-        <div class="nav-bar-div">
-          <ul class="nav-bar-ul">
-            <li class="nav-bar">
+        <div>
+          <ul className="nav-bar">
+            <li>
               <a href="/roadmap">
                 Roadmap
               </a>
             </li>
-            <li class="nav-bar">
+            <li>
               <a href="/team">
                 Team
               </a>
             </li>
-            <li class="nav-bar">
+            <li>
               <img src={`${process.env.PUBLIC_URL}/logo.gif`} alt="Project Hydro Logo" height="100" width="100" />
             </li>
-            <li class="nav-bar">
+            <li>
               <a href="/documentation">
                 Documentation
               </a>
             </li>
-            <li class="nav-bar">
+            <li>
               <a href="/events">
                 Events
               </a>
