@@ -56,11 +56,7 @@ class App extends Component {
               twitter="https://twitter.com/noahzinsmeister"
               github="https://github.com/noahhydro"
               photoName = "noah.png"
-<<<<<<< HEAD
-              background =  "space.png"
-=======
               backgroundName = "stars.png"
->>>>>>> 11ff9ff28650a0286c67f84be53cb24e93f92afa
             />
             <Profile
               name = "Shane Hampton"
