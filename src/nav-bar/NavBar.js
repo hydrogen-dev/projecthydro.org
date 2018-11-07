@@ -7,12 +7,12 @@ class NavBar extends Component {
     return (
       <ul className="nav-bar">
         <li>
-          <a href="/roadmap">
+          <a href="#roadmap">
             Roadmap
           </a>
         </li>
         <li>
-          <a href="/team">
+          <a href="#team">
             Team
           </a>
         </li>

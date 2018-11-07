@@ -3,6 +3,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Profile from './profiles/Profile';
 import NavBar from './nav-bar/NavBar';
+import Roadmap from './roadmap/Roadmap';
 import Footer from './Footer';
 import './sections.css';
 
@@ -32,14 +33,19 @@ class App extends Component {
     return (
       <div style={mainStyles}>
           <NavBar />
-          
+
           <h2 style={{width: "100%", textAlign: "center"}}>Project Hydro</h2>
           <section className="sections">
+            Hydro is a layer 2 blockchain platform built on top of Ethereum
+          </section>
 
+          <h2 style={{width: "100%", textAlign: "center"}}>Roadmap</h2>
+          <section className="sections">
+            <Roadmap />
           </section>
 
           <h2 style={{width: "100%", textAlign: "center"}}>Core Contributors</h2>
-          <section className="sections">
+          <section className="sections" id="team">
             <div style={{...headerStyles, flex: 1}} id="cards">
               <Profile
                 name = "Andy Chorlian"
