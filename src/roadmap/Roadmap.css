@@ -83,8 +83,12 @@ svg {
   padding: 16px;
 }
 
+.info ul {
+  background-color: #FFFFFF;
+}
+
 .front .img {
-  background-color: #dadce2;
+  background-color: #FFFFFF;
   background-position: center;
   background-size: cover;
   border-radius: 5px 5px 0 0;
@@ -106,13 +110,13 @@ svg {
   cursor: pointer;
 }
 .back .reviews p {
-  color: #c4c4c4;
+  color: #FFFFFF;
   font-weight: 300;
   margin: 1px 0 0 6px;
   transition: 0.3s ease-in-out;
 }
 .back .reviews:hover p {
-  color: #555;
+  color: #FFFFFF;
 }
 .back li {
   line-height: 22px;
@@ -126,12 +130,11 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #7fbfff;
-  /* background-image: linear-gradient(-90deg, #FFB714, #FFE579); */
+  /* background-color: #7fbfff; */
   border-radius: 5px;
   cursor: pointer;
 }
-.back .btn:hover h4 {
+/* .back .btn:hover h4 {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
 }
@@ -146,11 +149,30 @@ svg {
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-}
-.back .btn svg {
+} */
+/* .back .btn svg {
   margin: 1px 0 0 4px;
   -webkit-transform: translateX(-8px);
           transform: translateX(-8px);
   opacity: 0;
   transition: all 0.3s ease-out;
+} */
+
+button {
+  display: block;
+  padding: 0.6em 0.88em;
+  background: linear-gradient(to right, #7fbfff 50%, #fff 50%);
+  background-size: 200% 100.5%;
+  background-position: right bottom;
+  font: 1.25em "Roboto";
+  color: #020202;
+  border: none;
+  border-left: 0.2em solid #7fbfff;
+  border-color: none;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s ease-out;
+}
+button:hover {
+  background-position: left bottom;
+  color: white;
 }
