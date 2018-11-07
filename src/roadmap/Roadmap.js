@@ -109,7 +109,7 @@ class Roadmap extends Component {
               <div class="info">
                 <h2>At a glance</h2>
                 <ul>
-                  <li>Transact quickyl and securely on top of Ethereum</li>
+                  <li>Transact quickly and securely on top of Ethereum</li>
                   <li>Reduce user friction in applications</li>
                 </ul>
                 <div class="btn">
