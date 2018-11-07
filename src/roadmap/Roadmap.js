@@ -36,11 +36,13 @@ class Roadmap extends Component {
                   <li>Very login attempts through Smart Contracts</li>
                   <li>Easy to port to a new mobile device</li>
                 </ul>
-                <div class="btn">
-                  <button>Whitepaper</button>
-                </div>
               </div>
             </div>
+          </div>
+          <div class="btn" >
+            <a href="https://github.com/hydrogen-dev/hydro-docs/blob/master/Raindrop/Raindrop.md">
+              <button>Whitepaper</button>
+            </a>
           </div>
         </div>
 
@@ -61,11 +63,14 @@ class Roadmap extends Component {
                   <li>Allow for use of multiple address in one identity</li>
                   <li>Protect your user data</li>
                 </ul>
-                <div class="btn">
-                  <button>Whitepaper</button>
-                </div>
+
               </div>
             </div>
+          </div>
+          <div class="btn">
+            <a href="https://github.com/hydrogen-dev/hydro-docs/blob/master/Snowflake/Snowflake_DRAFT.md">
+              <button>Whitepaper</button>
+            </a>
           </div>
         </div>
 
@@ -85,11 +90,14 @@ class Roadmap extends Component {
                   <li>Securely sign and stamp documents</li>
                   <li>Very multiparty docuemnt signatures</li>
                 </ul>
-                <div class="btn">
-                  <button>Whitepaper</button>
-                </div>
+
               </div>
             </div>
+          </div>
+          <div class="btn">
+            <a href="https://github.com/hydrogen-dev/hydro-docs/blob/master/Ice/Ice_DRAFT.md">
+              <button>Whitepaper</button>
+            </a>
           </div>
         </div>
 
@@ -109,11 +117,14 @@ class Roadmap extends Component {
                   <li>Transact quickly and securely on top of Ethereum</li>
                   <li>Reduce user friction in applications</li>
                 </ul>
-                <div class="btn">
-                  <button>Whitepaper</button>
-                </div>
+
               </div>
             </div>
+          </div>
+          <div class="btn">
+            <a href="#roadmap">
+              <button>Coming Soon</button>
+            </a>
           </div>
         </div>
 
@@ -133,11 +144,14 @@ class Roadmap extends Component {
                   <li>TODO</li>
                   <li>TODO</li>
                 </ul>
-                <div class="btn">
-                  <button>Whitepaper</button>
-                </div>
+
               </div>
             </div>
+          </div>
+          <div class="btn">
+            <a href="#roadmap">
+              <button>Coming Soon</button>
+            </a>
           </div>
         </div>
 
