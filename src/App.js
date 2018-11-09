@@ -74,6 +74,24 @@ class App extends Component {
                 photoName = "shane.png"
                 backgroundName = "hexagons.png"
               />
+              <Profile
+                name = "Jess Nicholson"
+                linkedIn="https://www.linkedin.com/in/jessica-nicholson-4b117092/"
+                email="jess@hydrogenplatform.com"
+                twitter=""
+                github="https://github.com/JessHydrogen"
+                photoName = "jess.png"
+                backgroundName = "kitty.jpg"
+              />
+              <Profile
+                name = "Anurag Angara"
+                linkedIn="https://www.linkedin.com/in/anurag-angara-6863a483/"
+                email="anurag@hydrogenplatform.com"
+                twitter="https://twitter.com/AnuragHydro"
+                github="https://github.com/AnuragHydro"
+                photoName = "anurag.png"
+                backgroundName = "mumen.png"
+              />
             </div>
           </section>
 
