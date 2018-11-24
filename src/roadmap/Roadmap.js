@@ -33,7 +33,7 @@ class Roadmap extends Component {
                 <h2>At a glance</h2>
                 <ul>
                   <li>Protect your account with an Ethereum address</li>
-                  <li>Very login attempts through Smart Contracts</li>
+                  <li>Verify login attempts through Smart Contracts</li>
                   <li>Easy to port to a new mobile device</li>
                 </ul>
               </div>
@@ -60,7 +60,7 @@ class Roadmap extends Component {
                 <h2>At a glance</h2>
                 <ul>
                   <li>Build on ERC-1484</li>
-                  <li>Allow for use of multiple address in one identity</li>
+                  <li>Allow for use of multiple addresses in one identity</li>
                   <li>Protect your user data</li>
                 </ul>
 
@@ -88,7 +88,7 @@ class Roadmap extends Component {
                 <h2>At a glance</h2>
                 <ul>
                   <li>Securely sign and stamp documents</li>
-                  <li>Very multiparty docuemnt signatures</li>
+                  <li>Verify multiparty document signatures</li>
                 </ul>
 
               </div>
