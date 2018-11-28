@@ -7,7 +7,18 @@ node_js:
 cache:
   directories:
   - node_modules
-before_install:
-- echo -e "machine github.com\n  login $GH_TOKEN" > ~/.netrc
-install: npm install
-script: npm run deploy
+jobs:
+  include:
+    - stage: test
+      install:
+        - npm install
+      script:
+        - npm run build
+        - npm test
+    - stage: deploy
+      if: type = push
+      install:
+        - echo -e "machine github.com\n  login $GH_TOKEN" > ~/.netrc
+        - npm install
+      script:
+        - npm run deploy
