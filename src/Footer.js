@@ -29,7 +29,7 @@ class Footer extends Component {
 
           <p className="footer-company-about">
             <span>About the Project</span>
-            Hydro is a public and decentralized project building products on the Ethereum blockchain.
+            Hydro is a public, decentralized project building products on the Ethereum blockchain.
           </p>
 
           <div className="footer-icons">
