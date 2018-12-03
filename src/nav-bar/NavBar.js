@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom"
 
 import './NavBar.css';
 
@@ -7,27 +8,29 @@ class NavBar extends Component {
     return (
       <ul className="nav-bar">
         <li>
-          <a href="#roadmap">
+          <Link to="/roadmap">
             Roadmap
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#team">
+          <Link to="/team">
             Team
-          </a>
+          </Link>
         </li>
         <li>
-          <img src={`${process.env.PUBLIC_URL}/logo.gif`} alt="Project Hydro Logo" height="100" width="100" />
+          <Link to="/">
+            <img src={`${process.env.PUBLIC_URL}/logo.gif`} alt="Project Hydro Logo" height="100" width="100" />
+          </Link>
         </li>
         <li>
-          <a href="/documentation">
+          <Link to="/documentation">
             Docs
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/events">
-            Events
-          </a>
+          <Link to="/dapps">
+            dApps
+          </Link>
         </li>
       </ul>
     )
