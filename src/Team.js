@@ -19,7 +19,7 @@ class Team extends Component  {
         <div style={{...profileStyles}}>
           <Profile
             name ="Andy Chorlian"
-            role="Protocol Developer"
+            teamrole="Protocol Developer"
             linkedIn="https://www.linkedin.com/in/achorlia/"
             email="andy@hydrogenplatform.com"
             twitter="https://twitter.com/andy8052"
@@ -29,7 +29,7 @@ class Team extends Component  {
           />
           <Profile
             name = "Noah Zinsmeister"
-            role="Protocol Developer"
+            teamrole="Protocol Developer"
             linkedIn="https://www.linkedin.com/in/noahzinsmeister/"
             email="noah@hydrogenplatform.com"
             twitter="https://twitter.com/noahzinsmeister"
@@ -39,7 +39,7 @@ class Team extends Component  {
           />
           <Profile
             name = "Shane Hampton"
-            role="Product"
+            teamrole="Product"
             linkedIn="https://www.linkedin.com/in/shane-hampton-a9689b49/"
             email="shane@hydrogenplatform.com"
             twitter="https://twitter.com/citizenshane_"
@@ -49,7 +49,7 @@ class Team extends Component  {
           />
           <Profile
             name = "Jess Nicholson"
-            role="Product"
+            teamrole="Product"
             linkedIn="https://www.linkedin.com/in/jessica-nicholson-4b117092/"
             email="jess@hydrogenplatform.com"
             github="https://github.com/JessHydrogen"
@@ -58,7 +58,7 @@ class Team extends Component  {
           />
           <Profile
             name = "Anurag Angara"
-            role="Product"
+            teamrole="Product"
             linkedIn="https://www.linkedin.com/in/anurag-angara-6863a483/"
             email="anurag@hydrogenplatform.com"
             twitter="https://twitter.com/AnuragHydro"
@@ -68,7 +68,7 @@ class Team extends Component  {
           />
           <Profile
             name = "Nahom Yemane"
-            role="Community Manager"
+            teamrole="Community Manager"
             linkedIn="https://www.linkedin.com/in/nahom-yemane/"
             email="nahom@hydrogenplatform.com"
             twitter="https://twitter.com/NYemane_"
