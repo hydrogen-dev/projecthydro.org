@@ -48,7 +48,7 @@
 	box-shadow: 0 2px 2px rgba(0,0,0,0.1);
 }
 
-h3, a, i{
+h3, a, i, p{
 	font-family: 'Roboto', sans-serif;
 	font-weight: lighter;
 	-webkit-transition: .1s ease-in-out;
@@ -62,9 +62,8 @@ h3, a, i{
 		color: #212121;
 	}
 
-	a{
+	a, p{
 		display: block;
-		padding: 5px 5px;
 		font-size: 14px;
 		color: #9E9E9E;
 		text-decoration: none;

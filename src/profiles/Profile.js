@@ -20,6 +20,7 @@ class Profile extends Component {
           </div>
         </div>
         <h3>{this.props.name}</h3>
+        <p>{this.props.role}</p>
         <ul>
 
           {this.props.linkedIn === undefined ? undefined : (
