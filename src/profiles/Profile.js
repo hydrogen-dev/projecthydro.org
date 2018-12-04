@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import './Profile.css';
 
 class Profile extends Component {
   render() {
+    console.log(this.props.github)
     return (
       <div className="card">
         <div
@@ -18,17 +20,32 @@ class Profile extends Component {
           </div>
         </div>
         <h3>{this.props.name}</h3>
-        <a href={`mailto:${this.props.email}`}>{this.props.email}</a>
         <ul>
-          <a href={this.props.linkedIn} target="_blank" rel="noopener noreferrer">
-            <i style={{fontSize: 25}}><FontAwesomeIcon icon={['fab', 'linkedin']} /></i>
-          </a>
-          <a href={this.props.github} target="_blank" rel="noopener noreferrer">
-            <i style={{fontSize: 25}}><FontAwesomeIcon icon={['fab', 'github']}/></i>
-          </a>
-          <a href={this.props.twitter} target="_blank" rel="noopener noreferrer">
-            <i style={{fontSize: 25}}><FontAwesomeIcon icon={['fab', 'twitter']}/></i>
-          </a>
+
+          {this.props.linkedIn === undefined ? undefined : (
+            <a href={this.props.linkedIn} target="_blank" rel="noopener noreferrer">
+              <i style={{fontSize: 25}}><FontAwesomeIcon icon={['fab', 'linkedin']} /></i>
+            </a>
+          )}
+
+          {this.props.github === undefined ? undefined : (
+            <a href={this.props.github} target="_blank" rel="noopener noreferrer">
+              <i style={{fontSize: 25}}><FontAwesomeIcon icon={['fab', 'github']}/></i>
+            </a>
+          )}
+
+          {this.props.twitter === undefined ? undefined : (
+            <a href={this.props.twitter} target="_blank" rel="noopener noreferrer">
+              <i style={{fontSize: 25}}><FontAwesomeIcon icon={['fab', 'twitter']}/></i>
+            </a>
+          )}
+
+          {this.props.email === undefined ? undefined : (
+            <a href={`mailto:${this.props.email}`} target="_blank" rel="noopener noreferrer">
+              <i style={{fontSize: 25}}><FontAwesomeIcon icon={faEnvelope}/></i>
+            </a>
+          )}
+
         </ul>
       </div>
     )

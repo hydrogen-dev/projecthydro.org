@@ -48,7 +48,6 @@ class Team extends Component  {
             name = "Jess Nicholson"
             linkedIn="https://www.linkedin.com/in/jessica-nicholson-4b117092/"
             email="jess@hydrogenplatform.com"
-            twitter=""
             github="https://github.com/JessHydrogen"
             photoName = "jess.png"
             backgroundName = "kitty.jpg"
@@ -61,6 +60,14 @@ class Team extends Component  {
             github="https://github.com/AnuragHydro"
             photoName = "anurag.png"
             backgroundName = "mumen.png"
+          />
+          <Profile
+            name = "Nahom Yemane"
+            linkedIn="https://www.linkedin.com/in/nahom-yemane/"
+            email="nahom@hydrogenplatform.com"
+            twitter="https://twitter.com/NYemane_"
+            photoName = "nahom.png"
+            backgroundName = "hexagons.png"
           />
         </div>
       </section>
