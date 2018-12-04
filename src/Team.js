@@ -73,7 +73,7 @@ class Team extends Component  {
             email="nahom@hydrogenplatform.com"
             twitter="https://twitter.com/NYemane_"
             photoName = "nahom.png"
-            backgroundName = "hexagons.png"
+            backgroundName = "aurora.jpg"
           />
         </div>
       </section>
