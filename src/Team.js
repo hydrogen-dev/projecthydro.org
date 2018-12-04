@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 import Profile from './profiles/Profile';
 import './sections.css';
 
-const headerStyles = {
+const profileStyles = {
   width: '100%',
-  margin: 0,
-  padding: 0,
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  flexWrap: "wrap"
+  flexWrap: "wrap",
 }
 
 class Team extends Component  {
@@ -18,7 +16,7 @@ class Team extends Component  {
       <>
       <h2 style={{width: "100%", textAlign: "center"}}>Core Contributors</h2>
       <section className="sections" id="team">
-        <div style={{...headerStyles, flex: 1}} id="cards">
+        <div style={{...profileStyles}}>
           <Profile
             name = "Andy Chorlian"
             linkedIn="https://www.linkedin.com/in/achorlia/"

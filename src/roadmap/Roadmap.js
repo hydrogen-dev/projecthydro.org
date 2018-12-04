@@ -22,6 +22,7 @@ class Roadmap extends Component {
       <h2 style={{width: "100%", textAlign: "center"}}>Roadmap</h2>
       <section className="sections">
         <div className="roadmap-container">
+
           <div className="cardContainer inactive">
             <div className="roadmap-card">
               <div className="side front">
@@ -125,9 +126,7 @@ class Roadmap extends Component {
               </div>
             </div>
             <div className="btn">
-              <a href="#roadmap">
                 <button>Coming Soon</button>
-              </a>
             </div>
           </div>
 
@@ -152,9 +151,7 @@ class Roadmap extends Component {
               </div>
             </div>
             <div className="btn">
-              <a href="#roadmap">
                 <button>Coming Soon</button>
-              </a>
             </div>
           </div>
 

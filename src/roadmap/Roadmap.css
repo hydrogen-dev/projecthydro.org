@@ -5,24 +5,16 @@ svg {
 }
 
 .roadmap-container {
-  width: 100%;
-  margin: 0;
-  padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  align-items:      center;
+  justify-content:  center;
 }
 
 .cardContainer {
   position: flex;
-  width: 300px;
-  height: 500px;
   min-width: 300px;
   min-height: 500px;
-  margin: 4px;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
 }
 
 .active {
@@ -35,7 +27,7 @@ svg {
 
 .roadmap-card {
   display: inline-flex;
-  width: 100%;
+  min-width: 100%;
   height: 400px;
   margin-bottom: 25px;
   cursor: pointer;
@@ -145,29 +137,6 @@ svg {
   cursor: pointer;
   margin-bottom: 20px;
 }
-/* .back .btn:hover h4 {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-.back .btn:hover svg {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  opacity: 1;
-}
-.back .btn h4 {
-  -webkit-transform: translateX(12px);
-          transform: translateX(12px);
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-} */
-/* .back .btn svg {
-  margin: 1px 0 0 4px;
-  -webkit-transform: translateX(-8px);
-          transform: translateX(-8px);
-  opacity: 0;
-  transition: all 0.3s ease-out;
-} */
 
 button {
   cursor: pointer;

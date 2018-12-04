@@ -9,32 +9,65 @@ import Home from './Home';
 import Dapps from './Dapps';
 import Docs from './Docs';
 import { BrowserRouter as Router, Route } from "react-router-dom"
-import './sections.css';
 
 library.add(fab)
 
+const base = {
+    display:       "flex",
+    flexDirection: "column",
+    height:        "100vh"
+}
+
 const mainStyles = {
-  height: "100vh",
-  width: '100%',
-  margin: 0,
-  paddingTop: 130,
-  display: "block"
+  display:        "flex",
+  flexGrow:       1,
+  flexShrink:     0,
+  flexDirection:  "column",
+  alignItems:     "center",
+  justifyContent: "center",
+  minWidth:       "100vw",
+}
+
+const headerStyles = {
+  display:         "flex",
+  flexDirection:   "column",
+  flexShrink:      0,
+  alignItems:      "center",
+  justifyContent:  "center",
+  minWidth:        "100vw",
+  height:          143,
+}
+
+const footerStyle = {
+  display:         "flex",
+  flexDirection:   "row",
+  alignItems:      "center",
+  justifyContent:  "center",
+  minHeight:       "10vh",
+  flexShrink:      0,
+  flexWrap:        "wrap",
 }
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div style={mainStyles}>
+        <div style={base}>
+          <div style={headerStyles}>
             <NavBar />
+          </div>
 
-            <Route exact path="/" component={Home} />
-            <Route path="/roadmap" component={Roadmap} />
-            <Route path="/team" component={Team} />
-            <Route path="/dapps" component={Dapps} />
-            <Route path="/documentation" component={Docs} />
+          <div style={mainStyles}>
+              <Route exact path="/" component={Home} />
+              <Route path="/roadmap" component={Roadmap} />
+              <Route path="/team" component={Team} />
+              <Route path="/dapps" component={Dapps} />
+              <Route path="/documentation" component={Docs} />
+          </div>
 
+          <div style={footerStyle}>
             <Footer />
+          </div>
         </div>
       </Router>
     );
