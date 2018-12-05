@@ -71,6 +71,50 @@ const teamMembers = [
   }
 ]
 
+const daMembers = [
+  {
+    name: "Mark Anstead",
+    teamrole: "Business Development",
+    linkedIn: "https://www.linkedin.com/in/mark-anstead-098251108/",
+    email: "ansteadm@gmail.com",
+    twitter: "https://twitter.com/The_Shark_7",
+    github: "https://github.com/ansteadm",
+    photoName:  "mark_anstead.jpg",
+    backgroundName: "nature.jpeg"
+  },
+  {
+    name: "Jason Garland",
+    teamrole: "Coordinator",
+    linkedIn: "https://www.linkedin.com/in/jasongarland/",
+    email: "jason.n.garland@protonmail.com",
+    twitter: "https://twitter.com/jaazinn",
+    github: "https://github.com/jaazinn",
+    photoName:  "jason_garland.png",
+    backgroundName: "china.bmp"
+  },
+  {
+    name: "Awosika Israel Ayodeji",
+    teamrole: "Business Development",
+    linkedIn: "https://www.linkedin.com/in/ayodeji-israel-awosika-69924124/",
+    email: "ebunayo08@gmail.com",
+    twitter: "http://twitter.com/ebunayo08",
+    photoName:  "awosika.png",
+    backgroundName: "lagos.jpg"
+  }
+]
+
+// A blank to copy from for new people because I am lazy
+// {
+//   name: "",
+//   teamrole: "",
+//   linkedIn: "",
+//   email: "",
+//   twitter: "",
+//   github: "",
+//   photoName:  "",
+//   backgroundName: ""
+// }
+
 class Team extends Component  {
   render() {
     return (
@@ -79,6 +123,17 @@ class Team extends Component  {
         <section className="sections" id="team">
           <div style={{...profileStyles}}>
             {teamMembers
+              .map(a => ({sort: Math.random(), value: a}))
+              .sort((a, b) => a.sort - b.sort)
+              .map(a => a.value)
+              .map(member => <Profile {...member} />)
+            }
+          </div>
+        </section>
+        <h2 style={{width: "100%", textAlign: "center"}}>Decentralization Ambassadors</h2>
+        <section className="sections" id="team">
+          <div style={{...profileStyles}}>
+            {daMembers
               .map(a => ({sort: Math.random(), value: a}))
               .sort((a, b) => a.sort - b.sort)
               .map(a => a.value)
