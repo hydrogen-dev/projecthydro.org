@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import NavBar from './nav-bar/NavBar';
-import Header from './Header';
 import Roadmap from './roadmap/Roadmap';
 import Footer from './Footer';
 import Team from './Team';
