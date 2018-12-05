@@ -23,9 +23,9 @@ class NavBar extends Component {
           </Link>
         </li>
         <li>
-          <Link to="/documentation">
+          <a href="https://hydro.gitbook.io/solidity/">
             Docs
-          </Link>
+          </a>
         </li>
         <li>
           <Link to="/dapps">
