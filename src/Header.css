@@ -1,0 +1,18 @@
+#header {
+  background: #1e68b6; /* Old browsers */
+  background: -moz-linear-gradient(left, #1e68b6 0%, #20428e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1e68b6 0%,#20428e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1e68b6 0%,#20428e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e68b6', endColorstr='#20428e',GradientType=1 ); /* IE6-9 */color:#fff;
+}
+
+#header h2 {font-size: 20px;line-height: 28px;font-weight: 300;font-family: 'Avenir Next LT Pro', arial;}
+
+#intro {
+  width:50%;padding-bottom: 123px;
+}
+
+.text-accounts {position:relative;margin-top: 28px;margin-left: 7px;}
+.text-ident  {position:relative;margin-top: 27px;margin-left: 9px;}
+.text-doc  {position:relative;margin-top: 28px;margin-left: 3px;}
+.text-trans {position:relative;margin-top: 27px;margin-left: 0px;}

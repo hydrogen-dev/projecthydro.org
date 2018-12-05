@@ -1,0 +1,121 @@
+h1, h2 {font-family: 'Muli';}
+img {max-width:100%;}
+a  {	text-decoration: none;cursor:pointer;}
+a:hover  { text-decoration:underline; }
+a:active { outline: none;}
+a:focus {-moz-outline-style: none;}
+h1, h2, h4, h5 {line-height:130%;}
+h1 {font-size: 53px;font-weight: 800;font-family: 'Muli';}
+h2 {font-size:30px;}
+h4 {font-size:21px;color:#636363;text-transform:uppercase;}
+h5 {font-size:1.1em;}
+.center {text-align:center;}
+.smaller {width:100%;margin:0 auto;}
+.bottom-padding {margin-bottom:70px;}
+.bottom-padding-30 {margin-bottom:30px;}
+.no-padding {margin-bottom:-40px;}
+.clr {clear:both;}
+.inner-wrapper {margin:0 auto;max-width:1200px;}
+.padding {padding-top:90px;padding-bottom:90px;}
+.top-padding{margin-top:25px;}
+.button {border-radius: 5px;padding:8px 29px 8px 29px;display: inline-block;font-size: 15px;}
+.box-inner .button {padding:8px 24px 8px 21px;}
+.box-inner .color {margin-right:5px;}
+#menu ul li a, .row-right, .row-left, .media-images {border-radius: 5px;}
+.button.color {color:#fff;background:#2739d6;}
+.button.gray {color:#2739d6;background:#e8e8e8;}
+.button.gray i.far {margin-left: 0px;margin-right: 8px;margin-top: 0px;}
+.button.no-color {color:#2739d6;background:#fff;}
+.column-1 {float:left;width:50%;}
+.column-2  {float:right;width:50%;text-align:right;}
+.bottom-padding-icons {  margin-bottom: 25px;}
+.button:hover {background:#000;text-decoration:none;color:#fff;
+	-webkit-box-shadow:0 0 14px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.2);}
+.box-check, .box-date {border-radius:200px;}
+
+/* Columns */
+.col-7 {float:left;width:14.285%;}
+.col-6 {float:left;width:16.66666%;}
+.col-5 {float:left;width:20%;}
+.col-4 {float:left;width:25%;}
+.col-3 {float:left;width:33.333333%;}
+.col-2 {float:left;width:50%;}
+.col-1 {float:left;width:100%;}
+
+/* Boxes */
+.box-3 {display:table;}
+.box-7 .box {float:left;width:14.285%;}
+.box-6 .box {float:left;width:16.66666%;}
+.box-5 .box {float:left;width:20%;}
+.box-4 .box {float:left;width:25%;}
+.box-3  .box{float:left;width:33.333333%;}
+.box-2 .box {float:left;width:50%;}
+.box-1 .box {float:left;width:100%;}
+.box {margin-bottom: 42px;display:table-cell;}
+.box-padding {padding-left:18px;padding-right:18px;position: relative;}
+.box-inner {
+	background:#fff;
+	padding:32px;
+	border-radius:5px;
+	padding-top: 43px;
+	line-height: 23px;
+	-webkit-box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.05);
+	box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.05);}
+.box-text {
+	min-height:284px;}
+
+.button, #menu ul li a, a {
+-webkit-transition:  all 300ms linear 0s;
+-moz-transition:  all 300ms linear 0s;
+-o-transition: all 300ms linear 0s;
+transition:  all 300ms linear 0s;}
+
+
+.button.noformatting {padding:0px;font-weight:700;}
+.button.noformatting:hover {text-decoration:underline;background:none;-webkit-box-shadow:none;box-shadow:none;-moz-box-shadow:none;}
+
+.row-right {
+	background:#fff;
+	padding-top:86px;
+	padding-bottom:84px;
+	margin-bottom: 42px;
+	width: 90%;
+    float: right;
+	color:#6c6c6c;
+	-webkit-box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.05);
+	box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.05);}
+
+	.media-titles {font-size:20px;font-weight:bold;}
+
+	.row-right-1 {float:left;width:24%;}
+	.row-right-2 {float:left;width:66%;}
+	.row-right-3 {float:left;width:10%;}
+	.row-right .media-images {    position: absolute;
+    margin-left: -97px;margin-top: -89px;-webkit-box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.2);}
+
+.row-left {
+	background:#fff;
+	padding-top:86px;
+	padding-bottom:84px;
+	margin-bottom: 42px;
+	width: 90%;
+    float: left;
+	color:#6c6c6c;
+	-webkit-box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.05);
+	box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.05);}
+
+
+	.row-left-1 {float:right;width:24%;}
+	.row-left-2 {float:right;width:66%;}
+	.row-left-3 {float:right;width:10%;}
+	.row-left .media-images {    position: absolute;
+    margin-left: 75px;margin-top: -89px;-webkit-box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.2);}
