@@ -6,7 +6,6 @@ import './Profile.css';
 
 class Profile extends Component {
   render() {
-    console.log(this.props.github)
     return (
       <div className="card">
         <div
