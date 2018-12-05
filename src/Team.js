@@ -119,7 +119,7 @@ class Team extends Component  {
   render() {
     return (
       <>
-        <h3 style={{width: "100%", textAlign: "center"}}>Core Contributors</h3>
+        <h2 style={{width: "100%", textAlign: "center"}}>Core Contributors</h2>
         <section className="sections" id="team">
           <div style={{...profileStyles}}>
             {teamMembers
@@ -130,7 +130,7 @@ class Team extends Component  {
             }
           </div>
         </section>
-        <h3 style={{width: "100%", textAlign: "center"}}>Decentralization Ambassadors</h3>
+        <h2 style={{width: "100%", textAlign: "center"}}>Decentralization Ambassadors</h2>
         <section className="sections" id="team">
           <div style={{...profileStyles}}>
             {daMembers

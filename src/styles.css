@@ -1,11 +1,11 @@
-h1, h2 {font-family: 'Muli';}
+h1, h2 {font-family: 'Open Sans', sans-serif;}
 img {max-width:100%;}
 a  {	text-decoration: none;cursor:pointer;}
 a:hover  { text-decoration:underline; }
 a:active { outline: none;}
 a:focus {-moz-outline-style: none;}
 h1, h2, h4, h5 {line-height:130%;}
-h1 {font-size: 53px;font-weight: 800;font-family: 'Muli';}
+h1 {font-size: 53px;font-family: 'Open Sans', sans-serif;}
 h2 {font-size:30px;}
 h4 {font-size:21px;color:#636363;text-transform:uppercase;}
 h5 {font-size:1.1em;}
