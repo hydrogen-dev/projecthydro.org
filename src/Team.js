@@ -100,6 +100,26 @@ const daMembers = [
     twitter: "http://twitter.com/ebunayo08",
     photoName:  "awosika.png",
     backgroundName: "lagos.jpg"
+  },
+  {
+    name: "Pampey Raq Tripona",
+    teamrole: "Community Manager",
+    linkedIn: "https://www.linkedin.com/in/pampey-raq-tripona-7b0101173",
+    email: "pampey@projecthydro.org",
+    twitter: "https://twitter.com/RaqDBlock",
+    github: "https://github.com/Gitgineer",
+    photoName:  "pompey.jpg",
+    backgroundName: "city.jpg"
+  },
+  {
+    name: "Harsh Rajat",
+    teamrole: "HCDP Developer",
+    linkedIn: "https://www.linkedin.com/in/harshrajat/",
+    email: "harsh.rajat@gmail.com",
+    twitter: "https://twitter.com/harshrajat/",
+    github: "https://github.com/harshrajat",
+    photoName:  "harsh.jpg",
+    backgroundName: "mumbai.png"
   }
 ]
 
