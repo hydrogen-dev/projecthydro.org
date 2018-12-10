@@ -68,8 +68,8 @@ class Roadmap extends Component {
     										<p>Raindrop is an authentication protocol which vastly improves upon current 2FA standards with decentralized public blockchain security for logins, transactions, and payments.</p>
     										<div class="clr"></div>
     									</BoxText>
-    									<a class="button color top-padding" href="#">Learn More</a>
-    									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+    									<a class="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</a>
+    									<a class="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i class="far fa-file-alt"></i>Whitepaper</a>
     								</BoxInner>
     							</BoxPadding>
     						</Box>
@@ -84,8 +84,8 @@ class Roadmap extends Component {
     										<p>Snowflake is an identity protocol designed to protect private data from identity theft.  Consumer data will be encrypted on the blockchain, frustrating hackers, and providing a major barrier to identity theft attempts.</p>
     										<div class="clr"></div>
     									</BoxText>
-    									<a class="button color top-padding" href="#">Learn More</a>
-    									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+    									<a class="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</a>
+    									<a class="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i class="far fa-file-alt"></i>Whitepaper</a>
     								</BoxInner>
     							</BoxPadding>
     						</Box>
@@ -100,8 +100,8 @@ class Roadmap extends Component {
     										<p>Ice is a document signing and verification protocol which will allow users to stamp, authenticate, verify and seal any document or contract that is sent.</p>
     										<div class="clr"></div>
     									</BoxText>
-    									<a class="button color top-padding" href="#">Learn More</a>
-    									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+    									<a class="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</a>
+    									<a class="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i class="far fa-file-alt"></i>Whitepaper</a>
     								</BoxInner>
     							</BoxPadding>
     						</Box>
@@ -118,8 +118,8 @@ class Roadmap extends Component {
     										<p>Tide is a payment protocol which will allow for one-click authorization of debit and credit POS transactions, as well as instantaneous p2p, p2b, and b2b payments across the blockchain.</p>
     										<div class="clr"></div>
     									</BoxText>
-    									<a class="button color top-padding" href="#">Learn More</a>
-    									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+    									<a class="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</a>
+    									<a class="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i class="far fa-file-alt"></i>Whitepaper</a>
     								</BoxInner>
     							</BoxPadding>
     						</Box>
@@ -134,8 +134,8 @@ class Roadmap extends Component {
     										<p>Mist is an artificial intelligence protocol which will create industry best data modeling of high-speed transactions and fraud detection.</p>
     										<div class="clr"></div>
     									</BoxText>
-    									<a class="button color top-padding" href="#">Learn More</a>
-    									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+    									<a class="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</a>
+    									<a class="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i class="far fa-file-alt"></i>Whitepaper</a>
     								</BoxInner>
     							</BoxPadding>
     						</Box>
@@ -150,7 +150,7 @@ class Roadmap extends Component {
     										<p>Coming Soon</p>
     										<div class="clr"></div>
     									</BoxText>
-    									<a class="button color top-padding" target="_blank" href="https://github.com/HydroCommunity/Community-Brainstorming/issues/7">Learn More</a>
+    									<a class="button color top-padding" target="_blank" rel="noopener noreferrer" href="https://github.com/HydroCommunity/Community-Brainstorming/issues/7">Learn More</a>
 
     								</BoxInner>
     							</BoxPadding>

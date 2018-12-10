@@ -42,8 +42,8 @@ class Vision extends Component  {
             As a truly decentralized project, the founding team at Hydrogen are enlisting the help of the global community of developers as well as Decentralization Ambassadors, who will eventually take over the project through their HCDP and DA programs. Through these programs, Project Hydro aims to create a governance blueprint for future decentralized models.
           </Text>
           <Buttons>
-            <a href="https://itunes.apple.com/app/id1406519814" target="_blank"><StoreButton alt="appstore" class="store-buttons" src="images/appstore.png"/></a>
-            <a href="https://play.google.com/store/apps/details?id=com.hydrogenplatform.hydro" target="_blank"><StoreButton alt="playstore" class="store-buttons" src="images/playstore.png" /></a>
+            <a href="https://itunes.apple.com/app/id1406519814" target="_blank" rel="noopener noreferrer"><StoreButton alt="appstore" class="store-buttons" src="images/appstore.png"/></a>
+            <a href="https://play.google.com/store/apps/details?id=com.hydrogenplatform.hydro" target="_blank" rel="noopener noreferrer"><StoreButton alt="playstore" class="store-buttons" src="images/playstore.png" /></a>
           </Buttons>
         </Column1>
         <div class="column-2">
