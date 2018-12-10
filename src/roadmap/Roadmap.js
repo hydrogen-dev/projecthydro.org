@@ -1,163 +1,167 @@
 import React, { Component } from 'react';
-import './Roadmap.css';
+import styled from 'styled-components';
 
+const Box = styled.div`
+  float:left;
+  width:33.333333%;
+  margin-bottom: 42px;
+  display:table-cell;
+`
+const BoxPadding = styled.div`
+  padding-left:18px;
+  padding-right:18px;
+  position: relative;
+`
+const BoxDate = styled.div`
+  height:60px;
+  width:60px;
+  position:absolute;
+  right:0;
+  margin-top: -18px;
+  color:#fff;
+  -webkit-box-shadow:0px 4px 8px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.1);
+  background:#f8f8f8;
+  font-size: 18px;
+  line-height: 49px;
+  font-weight: bold;
+  color:#6b6b6b;
+`
+const BoxDateSpan = styled.span`
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: -32px;
+`
+const BoxInner = styled.div`
+  background:#fff;
+	padding:32px;
+	border-radius:5px;
+	padding-top: 43px;
+	line-height: 23px;
+	-webkit-box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.05);
+	box-shadow:0 0 35px 0px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.05);
+`
+const BoxText = styled.div`
+  min-height:284px;
+`
 class Roadmap extends Component {
-
-  componentDidMount()  {
-    const cards = document.querySelectorAll('.roadmap-card');
-
-    function transition() {
-      if (this.classList.contains('active')) {
-        this.classList.remove('active')
-      } else {
-        this.classList.add('active');
-      }
-    }
-    cards.forEach(card => card.addEventListener('click', transition));
-  }
 
   render() {
     return (
-      <>
-      <h2 style={{width: "100%", textAlign: "center"}}>Roadmap</h2>
-      <section className="sections">
-        <div className="roadmap-container">
+      <section id="row-4">
+    		<div id="row-4-backgrounds">
+    			<div class="inner-wrapper padding">
+    				<h3 class="center bottom-padding">Project Hydro Roadmap</h3>
+    				<div class="center">
+    					<div>
 
-          <div className="cardContainer inactive">
-            <div className="roadmap-card">
-              <div className="side front">
-                <div className="img" style={{backgroundImage: `url("${process.env.PUBLIC_URL}/roadmap/raindrop.png")`}}></div>
-                <div className="info">
-                  <h2>Raindrop</h2>
-                  <p>Two-factor authentication (2FA) on the blockchain.</p>
-                </div>
-              </div>
-              <div className="side back">
-                <div className="info">
-                  <h2>At a glance</h2>
-                  <ul>
-                    <li>Protect your account with an Ethereum address</li>
-                    <li>Verify login attempts through Smart Contracts</li>
-                    <li>Easy to port to a new mobile device</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="btn" >
-              <a href="https://github.com/hydrogen-dev/hydro-docs/blob/master/Raindrop/Raindrop.md">
-                <button>Whitepaper</button>
-              </a>
-            </div>
-          </div>
+    						<Box>
+    							<BoxPadding>
+    								<BoxDate>Q3<BoxDateSpan>2018</BoxDateSpan></BoxDate>
+    								<BoxInner>
+    									<BoxText>
+    										<img alt="Raindrop" src={process.env.PUBLIC_URL + "/images/raindrop.jpg"} />
+    										<h4 class="center bottom-padding-icons">Raindrop</h4>
+    										<p>Raindrop is an authentication protocol which vastly improves upon current 2FA standards with decentralized public blockchain security for logins, transactions, and payments.</p>
+    										<div class="clr"></div>
+    									</BoxText>
+    									<a class="button color top-padding" href="#">Learn More</a>
+    									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+    								</BoxInner>
+    							</BoxPadding>
+    						</Box>
 
-          <div className="cardContainer inactive">
-            <div className="roadmap-card">
-              <div className="side front">
-                <div className="img" style={{backgroundImage: `url("${process.env.PUBLIC_URL}/roadmap/snowflake.png")`}}></div>
-                <div className="info">
-                  <h2>Snowflake</h2>
-                  <p>Unique and distributed user identity.</p>
-                </div>
-              </div>
-              <div className="side back">
-                <div className="info">
-                  <h2>At a glance</h2>
-                  <ul>
-                    <li>Build on ERC-1484</li>
-                    <li>Allow for use of multiple addresses in one identity</li>
-                    <li>Protect your user data</li>
-                  </ul>
+    						<Box>
+    							<BoxPadding>
+    								<BoxDate>Q4<BoxDateSpan>2018</BoxDateSpan></BoxDate>
+    								<BoxInner>
+    									<BoxText>
+    										<img alt="Snowflake" src={process.env.PUBLIC_URL + "/images/snowflake.jpg"} />
+    										<h4 class="center bottom-padding-icons">Snowflake</h4>
+    										<p>Snowflake is an identity protocol designed to protect private data from identity theft.  Consumer data will be encrypted on the blockchain, frustrating hackers, and providing a major barrier to identity theft attempts.</p>
+    										<div class="clr"></div>
+    									</BoxText>
+    									<a class="button color top-padding" href="#">Learn More</a>
+    									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+    								</BoxInner>
+    							</BoxPadding>
+    						</Box>
 
-                </div>
-              </div>
-            </div>
-            <div className="btn">
-              <a href="https://github.com/hydrogen-dev/hydro-docs/blob/master/Snowflake/Snowflake_DRAFT.md">
-                <button>Whitepaper</button>
-              </a>
-            </div>
-          </div>
+    						<Box>
+    							<BoxPadding>
+    								<BoxDate>Q1<BoxDateSpan>2019</BoxDateSpan></BoxDate>
+    								<BoxInner>
+    									<BoxText>
+    										<img alt="Ice" src={process.env.PUBLIC_URL + "/images/ice.jpg"} />
+    										<h4 class="center bottom-padding-icons">Ice</h4>
+    										<p>Ice is a document signing and verification protocol which will allow users to stamp, authenticate, verify and seal any document or contract that is sent.</p>
+    										<div class="clr"></div>
+    									</BoxText>
+    									<a class="button color top-padding" href="#">Learn More</a>
+    									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+    								</BoxInner>
+    							</BoxPadding>
+    						</Box>
 
-          <div className="cardContainer inactive">
-            <div className="roadmap-card">
-              <div className="side front">
-                <div className="img" style={{backgroundImage: `url("${process.env.PUBLIC_URL}/roadmap/ice.png")`}}></div>
-                <div className="info">
-                  <h2>Ice</h2>
-                  <p>Document storage and signing.</p>
-                </div>
-              </div>
-              <div className="side back">
-                <div className="info">
-                  <h2>At a glance</h2>
-                  <ul>
-                    <li>Securely sign and stamp documents</li>
-                    <li>Verify multiparty document signatures</li>
-                  </ul>
+    						<div class="clr-boxes"></div>
 
-                </div>
-              </div>
-            </div>
-            <div className="btn">
-              <a href="https://github.com/hydrogen-dev/hydro-docs/blob/master/Ice/Ice_DRAFT.md">
-                <button>Whitepaper</button>
-              </a>
-            </div>
-          </div>
+    						<Box>
+    							<BoxPadding>
+    								<BoxDate>Q2<BoxDateSpan>2019</BoxDateSpan></BoxDate>
+    								<BoxInner>
+    									<BoxText>
+    										<img alt="Tide" src={process.env.PUBLIC_URL + "/images/tide.jpg"} />
+    										<h4 class="center bottom-padding-icons">Tide</h4>
+    										<p>Tide is a payment protocol which will allow for one-click authorization of debit and credit POS transactions, as well as instantaneous p2p, p2b, and b2b payments across the blockchain.</p>
+    										<div class="clr"></div>
+    									</BoxText>
+    									<a class="button color top-padding" href="#">Learn More</a>
+    									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+    								</BoxInner>
+    							</BoxPadding>
+    						</Box>
 
-          <div className="cardContainer inactive">
-            <div className="roadmap-card">
-              <div className="side front">
-                <div className="img" style={{backgroundImage: `url("${process.env.PUBLIC_URL}/roadmap/tide.png")`}}></div>
-                <div className="info">
-                  <h2>Tide</h2>
-                  <p>A layer 2 payments protocol.</p>
-                </div>
-              </div>
-              <div className="side back">
-                <div className="info">
-                  <h2>At a glance</h2>
-                  <ul>
-                    <li>Transact quickly and securely on top of Ethereum</li>
-                    <li>Reduce user friction in applications</li>
-                  </ul>
+    						<Box>
+    							<BoxPadding>
+    								<BoxDate>Q3<BoxDateSpan>2019</BoxDateSpan></BoxDate>
+    								<BoxInner>
+    									<BoxText>
+    										<img alt="Mist" src={process.env.PUBLIC_URL + "/images/mist.jpg"} />
+    										<h4 class="center bottom-padding-icons">Mist</h4>
+    										<p>Mist is an artificial intelligence protocol which will create industry best data modeling of high-speed transactions and fraud detection.</p>
+    										<div class="clr"></div>
+    									</BoxText>
+    									<a class="button color top-padding" href="#">Learn More</a>
+    									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+    								</BoxInner>
+    							</BoxPadding>
+    						</Box>
 
-                </div>
-              </div>
-            </div>
-            <div className="btn">
-                <button>Coming Soon</button>
-            </div>
-          </div>
+    						<Box>
+    							<BoxPadding>
+    								<BoxDate>Q4<BoxDateSpan>2019</BoxDateSpan></BoxDate>
+    								<BoxInner>
+    									<BoxText>
+    										<img alt="Mist" src={process.env.PUBLIC_URL + "/images/hail.jpg"} />
+    										<h4 class="center bottom-padding-icons">Hail</h4>
+    										<p>Coming Soon</p>
+    										<div class="clr"></div>
+    									</BoxText>
+    									<a class="button color top-padding" target="_blank" href="https://github.com/HydroCommunity/Community-Brainstorming/issues/7">Learn More</a>
 
-          <div className="cardContainer inactive">
-            <div className="roadmap-card">
-              <div className="side front">
-                <div className="img" style={{backgroundImage: `url("${process.env.PUBLIC_URL}/roadmap/mist.png")`}}></div>
-                <div className="info">
-                  <h2>Mist</h2>
-                  <p>Blockchain based AI.</p>
-                </div>
-              </div>
-              <div className="side back">
-                <div className="info">
-                  <h2>At a glance</h2>
-                  <ul>
-                    <li>TODO</li>
-                    <li>TODO</li>
-                  </ul>
+    								</BoxInner>
+    							</BoxPadding>
+    						</Box>
 
-                </div>
-              </div>
-            </div>
-            <div className="btn">
-                <button>Coming Soon</button>
-            </div>
-          </div>
-
-        </div>
-      </section>
-      </>
+    						<div class="clr"></div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
     )
   }
 }
