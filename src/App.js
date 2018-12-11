@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 import NavBar from './nav-bar/NavBar';
 import Roadmap from './roadmap/Roadmap';
 import Footer from './Footer';
@@ -12,42 +13,13 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 
 import './styles.css';
 
-library.add(fab)
+library.add(fab, fas)
 
 const base = {
+    minWidth:      "100vw",
     display:       "flex",
     flexDirection: "column",
     height:        "100vh"
-}
-
-const mainStyles = {
-  display:        "flex",
-  flexGrow:       1,
-  flexShrink:     0,
-  flexDirection:  "column",
-  alignItems:     "center",
-  justifyContent: "center",
-  minWidth:       "100vw",
-}
-
-const headerStyles = {
-  display:         "flex",
-  flexDirection:   "column",
-  flexShrink:      0,
-  alignItems:      "center",
-  justifyContent:  "center",
-  minWidth:        "100vw",
-  height:          143,
-}
-
-const footerStyle = {
-  display:         "flex",
-  flexDirection:   "row",
-  alignItems:      "center",
-  justifyContent:  "center",
-  minHeight:       "10vh",
-  flexShrink:      0,
-  flexWrap:        "wrap",
 }
 
 class App extends Component {
@@ -55,21 +27,15 @@ class App extends Component {
     return (
       <Router>
         <div style={base}>
-          <div style={headerStyles}>
-            <NavBar />
-          </div>
+          <NavBar />
 
           <Route exact path="/" component={Home} />
 
-          <div style={mainStyles}>
-              <Route path="/roadmap" component={Roadmap} />
-              <Route path="/team" component={Team} />
-              <Route path="/dapps" component={Dapps} />
-              <Route path="/documentation" component={Docs} />
-          </div>
-          <div style={footerStyle}>
-            <Footer />
-          </div>
+          <Route path="/roadmap" component={Roadmap} />
+          <Route path="/team" component={Team} />
+          <Route path="/dapps" component={Dapps} />
+          <Route path="/documentation" component={Docs} />
+          <Footer />
         </div>
       </Router>
     );
