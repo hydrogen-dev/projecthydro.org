@@ -59,7 +59,6 @@ class App extends Component {
             <NavBar />
           </div>
 
-
           <Route exact path="/" component={Home} />
 
           <div style={mainStyles}>
