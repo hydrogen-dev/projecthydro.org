@@ -3,7 +3,7 @@ import Header from './Header';
 import Ecosystem  from './Ecosystem';
 import MoreInfo from './MoreInfo';
 import Vision from './Vision';
-import './sections.css';
+import Integration from './Integration';
 
 class Home extends Component  {
   render() {
@@ -13,6 +13,7 @@ class Home extends Component  {
       <Ecosystem />
       <MoreInfo />
       <Vision />
+      <Integration />
       </>
     )
   }

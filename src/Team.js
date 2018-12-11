@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Profile from './profiles/Profile';
-import './sections.css';
 
 const profileStyles = {
   width: '100%',

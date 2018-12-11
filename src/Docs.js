@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './sections.css';
 
 class Docs extends Component  {
   render() {
