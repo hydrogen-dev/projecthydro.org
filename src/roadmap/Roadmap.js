@@ -79,9 +79,9 @@ class Roadmap extends Component {
     return (
       <section id="row-4">
     		<div id="row-4-backgrounds">
-    			<div class="inner-wrapper padding">
-    				<h2 class="center bottom-padding">Project Hydro Roadmap</h2>
-    				<div class="center">
+    			<div className="inner-wrapper padding">
+    				<h2 className="center bottom-padding">Project Hydro Roadmap</h2>
+    				<div className="center">
     					<div>
 
     						<Box>
@@ -90,12 +90,12 @@ class Roadmap extends Component {
     								<BoxInner>
     									<BoxText>
     										<img alt="Raindrop" src={process.env.PUBLIC_URL + "/images/raindrop.jpg"} />
-    										<h4 class="center bottom-padding-icons">Raindrop</h4>
+    										<h4 className="center bottom-padding-icons">Raindrop</h4>
     										<p>Raindrop is an authentication protocol which vastly improves upon current 2FA standards with decentralized public blockchain security for logins, transactions, and payments.</p>
     										<Clear/>
     									</BoxText>
-    									<ButtonColor class="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
-    									<ButtonGray class="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i class="far fa-file-alt"></i>Whitepaper</ButtonGray>
+    									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
+    									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
     								</BoxInner>
     							</BoxPadding>
     						</Box>
@@ -106,12 +106,12 @@ class Roadmap extends Component {
     								<BoxInner>
     									<BoxText>
     										<img alt="Snowflake" src={process.env.PUBLIC_URL + "/images/snowflake.jpg"} />
-    										<h4 class="center bottom-padding-icons">Snowflake</h4>
+    										<h4 className="center bottom-padding-icons">Snowflake</h4>
     										<p>Snowflake is an identity protocol designed to protect private data from identity theft.  Consumer data will be encrypted on the blockchain, frustrating hackers, and providing a major barrier to identity theft attempts.</p>
     										<Clear/>
     									</BoxText>
-    									<ButtonColor class="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
-    									<ButtonGray class="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i class="far fa-file-alt"></i>Whitepaper</ButtonGray>
+    									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
+    									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
     								</BoxInner>
     							</BoxPadding>
     						</Box>
@@ -122,17 +122,17 @@ class Roadmap extends Component {
     								<BoxInner>
     									<BoxText>
     										<img alt="Ice" src={process.env.PUBLIC_URL + "/images/ice.jpg"} />
-    										<h4 class="center bottom-padding-icons">Ice</h4>
+    										<h4 className="center bottom-padding-icons">Ice</h4>
     										<p>Ice is a document signing and verification protocol which will allow users to stamp, authenticate, verify and seal any document or contract that is sent.</p>
     										<Clear/>
     									</BoxText>
-    									<ButtonColor class="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
-    									<ButtonGray class="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i class="far fa-file-alt"></i>Whitepaper</ButtonGray>
+    									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
+    									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
     								</BoxInner>
     							</BoxPadding>
     						</Box>
 
-    						<div class="clr-boxes"></div>
+    						<div className="clr-boxes"></div>
 
     						<Box>
     							<BoxPadding>
@@ -140,12 +140,12 @@ class Roadmap extends Component {
     								<BoxInner>
     									<BoxText>
     										<img alt="Tide" src={process.env.PUBLIC_URL + "/images/tide.jpg"} />
-    										<h4 class="center bottom-padding-icons">Tide</h4>
+    										<h4 className="center bottom-padding-icons">Tide</h4>
     										<p>Tide is a payment protocol which will allow for one-click authorization of debit and credit POS transactions, as well as instantaneous p2p, p2b, and b2b payments across the blockchain.</p>
     										<Clear/>
     									</BoxText>
-    									<ButtonColor class="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
-    									<ButtonGray class="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i class="far fa-file-alt"></i>Whitepaper</ButtonGray>
+    									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
+    									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
     								</BoxInner>
     							</BoxPadding>
     						</Box>
@@ -156,12 +156,12 @@ class Roadmap extends Component {
     								<BoxInner>
     									<BoxText>
     										<img alt="Mist" src={process.env.PUBLIC_URL + "/images/mist.jpg"} />
-    										<h4 class="center bottom-padding-icons">Mist</h4>
+    										<h4 className="center bottom-padding-icons">Mist</h4>
     										<p>Mist is an artificial intelligence protocol which will create industry best data modeling of high-speed transactions and fraud detection.</p>
     										<Clear/>
     									</BoxText>
-    									<ButtonColor class="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
-    									<ButtonGray class="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i class="far fa-file-alt"></i>Whitepaper</ButtonGray>
+    									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
+    									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
     								</BoxInner>
     							</BoxPadding>
     						</Box>
@@ -172,11 +172,11 @@ class Roadmap extends Component {
     								<BoxInner>
     									<BoxText>
     										<img alt="Mist" src={process.env.PUBLIC_URL + "/images/hail.jpg"} />
-    										<h4 class="center bottom-padding-icons">Hail</h4>
+    										<h4 className="center bottom-padding-icons">Hail</h4>
     										<p>Coming Soon</p>
     										<Clear/>
     									</BoxText>
-    									<ButtonColor class="button color top-padding" target="_blank" rel="noopener noreferrer" href="https://github.com/HydroCommunity/Community-Brainstorming/issues/7">Learn More</ButtonColor>
+    									<ButtonColor className="button color top-padding" target="_blank" rel="noopener noreferrer" href="https://github.com/HydroCommunity/Community-Brainstorming/issues/7">Learn More</ButtonColor>
 
     								</BoxInner>
     							</BoxPadding>

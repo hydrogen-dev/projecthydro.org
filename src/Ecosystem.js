@@ -19,8 +19,8 @@ class Ecosystem extends Component  {
     return (
     <Main>
       <div id="row-1-backgrounds">
-        <div class="inner-wrapper no-padding">
-          <h2 class="no-padding">Hydro Ecosystem</h2>
+        <div className="inner-wrapper no-padding">
+          <h2 className="no-padding">Hydro Ecosystem</h2>
           <ImageDiv>
             <img alt="hydro ecosystem" src={process.env.PUBLIC_URL+ "/images/hydro-ecosystem.png"} />
           </ImageDiv>

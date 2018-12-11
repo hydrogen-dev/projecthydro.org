@@ -5,22 +5,22 @@ class MoreInfo extends Component  {
     return (
       <section id="row-2">
   		<div id="row-2-backgrounds">
-  			<div class="inner-wrapper padding">
-  				<div class="column-1">
-  					<div class="center">
+  			<div className="inner-wrapper padding">
+  				<div className="column-1">
+  					<div className="center">
   						<h3>Hydro Explained</h3>
   						<br/>
-  						<a class="button color" href={process.env.PUBLIC_URL}>Learn More</a>
+  						<a className="button color" href={process.env.PUBLIC_URL}>Learn More</a>
   					</div>
   				</div>
-  				<div class="column-2">
-  					<div class="center">
+  				<div className="column-2">
+  					<div className="center">
   						<h3>Developers</h3>
   						<br/>
-  						<a class="button color" href={process.env.PUBLIC_URL}>Learn More</a>
+  						<a className="button color" href={process.env.PUBLIC_URL}>Learn More</a>
   					</div>
   				</div>
-  				<div class="clr"></div>
+  				<div className="clr"></div>
   			</div>
   		</div>
   	</section>

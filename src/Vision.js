@@ -33,23 +33,23 @@ class Vision extends Component  {
   render() {
     return (
     <Main>
-      <div class="inner-wrapper padding">
+      <div className="inner-wrapper padding">
         <Column1>
           <Text>
-            <h2 class="bottom-padding-30">Project Hydro Vision</h2>
+            <h2 className="bottom-padding-30">Project Hydro Vision</h2>
             Hydro’s goal from the beginning was to create a global decentralized financial ecosystem that powers the Web 3.0.  However, as the ecosystem grows Hydro’s technology can be used in virtually any global system that requires ID verification or authentication - providing blockchain security.
             <br/><br/>
             As a truly decentralized project, the founding team at Hydrogen are enlisting the help of the global community of developers as well as Decentralization Ambassadors, who will eventually take over the project through their HCDP and DA programs. Through these programs, Project Hydro aims to create a governance blueprint for future decentralized models.
           </Text>
           <Buttons>
-            <a href="https://itunes.apple.com/app/id1406519814" target="_blank" rel="noopener noreferrer"><StoreButton alt="appstore" class="store-buttons" src="images/appstore.png"/></a>
-            <a href="https://play.google.com/store/apps/details?id=com.hydrogenplatform.hydro" target="_blank" rel="noopener noreferrer"><StoreButton alt="playstore" class="store-buttons" src="images/playstore.png" /></a>
+            <a href="https://itunes.apple.com/app/id1406519814" target="_blank" rel="noopener noreferrer"><StoreButton alt="appstore" className="store-buttons" src="images/appstore.png"/></a>
+            <a href="https://play.google.com/store/apps/details?id=com.hydrogenplatform.hydro" target="_blank" rel="noopener noreferrer"><StoreButton alt="playstore" className="store-buttons" src="images/playstore.png" /></a>
           </Buttons>
         </Column1>
-        <div class="column-2">
+        <div className="column-2">
           <img alt="hydro ecosystem" src="images/phoneapp.png" />
         </div>
-        <div class="clr"></div>
+        <div className="clr"></div>
       </div>
     </Main>
     )
