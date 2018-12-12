@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
+import './NavBar.css'
 
 const Container = styled.div`
   width: 100%;
@@ -132,19 +133,20 @@ const Clear = styled.div`
 
 let refOffset = 0;
 const bannerHeight = 77;
-const bannerWrapper = document.querySelector('.banner-wrapper');
-const banner = document.querySelector('.banner');
 
 class NavBar extends Component {
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handler);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handler);
   }
 
   handler = () => {
+    const bannerWrapper = document.querySelector('.banner-wrapper');
+    const banner = document.querySelector('.banner');
+
     const newOffset = window.scrollY || window.pageYOffset;
 
     if (newOffset > bannerHeight) {
@@ -156,12 +158,13 @@ class NavBar extends Component {
         bannerWrapper.classList.add('animateIn');
       }
       banner.style.background = 'rgba(255, 255, 255, 1)';
-    banner.style.display = 'flex';
+      banner.style.display = 'flex';
       refOffset = newOffset;
     } else {
-  bannerWrapper.classList.remove('animateIn');
+      bannerWrapper.classList.remove('animateIn');
+      bannerWrapper.classList.remove('animateOut');
       banner.style.backgroundColor = 'rgba(162, 197, 35, 0)';
-    banner.style.display = 'block';
+      banner.style.display = 'block';
     }
   };
 
@@ -172,14 +175,14 @@ class NavBar extends Component {
         <BannerWrapper className="banner-wrapper">
           <Banner className="banner">
             <MenuWrap>
-              <Logo>
+              <Logo className="logo">
                 <Link  to="/">
                   <img alt="logo" src={process.env.PUBLIC_URL + "/images/logo.png"} />
                 </Link>
               </Logo>
 
               <ShowMobile icon={['fas', 'bars']} />
-              <MenuAlign>
+              <MenuAlign className="menu-align">
                 <Menu>
                   <ListItem>
                     <StyledLink to="/roadmap">

@@ -1,0 +1,28 @@
+.animateIn{
+	transform: translateY(0px);
+	-webkit-box-shadow:0px 0px 25px 3px rgba(0, 0, 0, 0.1);
+	box-shadow:0px 0px 25px 3px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.1);
+}
+.animateIn .menu-align {
+  margin-top: 7px;
+}
+.animateIn .logo {
+  margin-top: 14px;
+}
+.animateIn li a {
+  color:#1e66b6 !important;
+}
+.animateIn li a:hover {
+  color:#fff !important;
+}
+
+.animateOut{
+	transform: translateY(-100%);
+	-webkit-box-shadow:none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+}
+.animateOut li a {
+	color:#fff !important;
+}
