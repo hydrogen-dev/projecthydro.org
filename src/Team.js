@@ -138,7 +138,7 @@ class Team extends Component  {
   render() {
     return (
       <>
-        <h2 style={{width: "100%", textAlign: "center"}}>Core Contributors</h2>
+        <h2 style={{width: "100%", textAlign: "center", marginTop: "100px"}}>Core Contributors</h2>
         <section className="sections" id="team">
           <div style={{...profileStyles}}>
             {teamMembers

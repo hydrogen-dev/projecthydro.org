@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
+import { withRouter } from 'react-router';
 import './NavBar.css'
 
 const Container = styled.div`
@@ -81,7 +82,7 @@ const StyledHref = styled.a`
   -moz-transition:  all 200ms linear 0s;
   -o-transition: all 200ms linear 0s;
   transition:  all 200ms linear 0s;
-  color:#fff;
+  color: ${props => props.home ? "#fff" : "#1e66b6"};
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 15px;
@@ -97,7 +98,7 @@ const StyledLink = styled(Link)`
   -moz-transition:  all 200ms linear 0s;
   -o-transition: all 200ms linear 0s;
   transition:  all 200ms linear 0s;
-  color:#fff;
+  color: ${props => props.home ? "#fff" : "#1e66b6"};
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 15px;
@@ -169,6 +170,8 @@ class NavBar extends Component {
   };
 
   render() {
+    const isHome = this.props.location.pathname === "/" ? true : false;
+
     return (
       <>
       <Container>
@@ -185,24 +188,16 @@ class NavBar extends Component {
               <MenuAlign className="menu-align">
                 <Menu>
                   <ListItem>
-                    <StyledLink to="/roadmap">
-                      Roadmap
-                    </StyledLink>
+                    {isHome ? <StyledLink home to="/roadmap">Roadmap</StyledLink> : <StyledLink to="/roadmap">Roadmap</StyledLink>}
                   </ListItem>
                   <ListItem>
-                    <StyledLink to="/team">
-                      Team
-                    </StyledLink>
+                    {isHome ? <StyledLink home to="/team">Team</StyledLink> : <StyledLink to="/team">Team</StyledLink>}
                   </ListItem>
                   <ListItem>
-                    <StyledHref href="https://hydro.gitbook.io/solidity/">
-                      Developers
-                    </StyledHref>
+                    {isHome ? <StyledHref home href="https://hydro.gitbook.io/solidity/">Developers</StyledHref> : <StyledHref href="https://hydro.gitbook.io/solidity/">Developers</StyledHref>}
                   </ListItem>
                   <ListItem>
-                    <StyledLink to="/dapps">
-                      dApps
-                    </StyledLink>
+                    {isHome ? <StyledLink home to="/dapps">dApps</StyledLink> : <StyledLink to="/dapps">dApps</StyledLink>}
                   </ListItem>
                 </Menu>
                 <Clear />
@@ -220,4 +215,4 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar
+export default withRouter(NavBar)
