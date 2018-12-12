@@ -11,12 +11,11 @@ import Dapps from './Dapps';
 import Docs from './Docs';
 import { BrowserRouter as Router, Route } from "react-router-dom"
 
-import './styles.css';
-
 library.add(fab, fas)
 
 const base = {
     minWidth:      "100vw",
+    maxWidth:      "100vw",
     display:       "flex",
     flexDirection: "column",
     height:        "100vh"
@@ -28,9 +27,7 @@ class App extends Component {
       <Router>
         <div style={base}>
           <NavBar />
-
           <Route exact path="/" component={Home} />
-
           <Route path="/roadmap" component={Roadmap} />
           <Route path="/team" component={Team} />
           <Route path="/dapps" component={Dapps} />
