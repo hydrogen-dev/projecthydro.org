@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+const Main = styled.section`
+  background:#f5f5f5;
+`
+const Box3 = styled.div`
+  display:table;
+`
 const Box = styled.div`
   float:left;
   width:33.333333%;
   margin-bottom: 42px;
   display:table-cell;
+  @media screen and (max-width: 1000px){
+    width:50%;
+  }
+  @media screen and (max-width: 686px){
+    width:100%;
+    float:none;
+    display:block;
+  }
 `
 const BoxPadding = styled.div`
   padding-left:18px;
@@ -70,124 +84,144 @@ const ButtonGray =  styled(Button)`
   color:#2739d6;
   background:#e8e8e8;
 `
+const InnerWrapper = styled.div`
+  margin:0 auto;
+  max-width:1200px;
+  padding-top:90px;
+  padding-bottom:90px;
+`
+const Title = styled.h2`
+  text-align:center;
+  margin-bottom:70px;
+`
+const Phase = styled.h4`
+  margin-bottom: 25px;
+  text-align:center;
+`
+const Center =  styled.div`
+  text-align:center;
+`
 const Clear = styled.div`
   clear:both;
+`
+const ClearBoxes = styled(Clear)`
+  @media screen and (max-width: 1000px){
+    clear:none;
+  }
 `
 class Roadmap extends Component {
 
   render() {
     return (
-      <section id="row-4">
-    		<div id="row-4-backgrounds">
-    			<div className="inner-wrapper padding">
-    				<h2 className="center bottom-padding">Project Hydro Roadmap</h2>
-    				<div className="center">
-    					<div>
+      <Main>
+  			<InnerWrapper>
+  				<Title>Project Hydro Roadmap</Title>
+  				<Center>
+  					<Box3>
 
-    						<Box>
-    							<BoxPadding>
-    								<BoxDate>Q3<BoxDateSpan>2018</BoxDateSpan></BoxDate>
-    								<BoxInner>
-    									<BoxText>
-    										<img alt="Raindrop" src={process.env.PUBLIC_URL + "/images/raindrop.jpg"} />
-    										<h4 className="center bottom-padding-icons">Raindrop</h4>
-    										<p>Raindrop is an authentication protocol which vastly improves upon current 2FA standards with decentralized public blockchain security for logins, transactions, and payments.</p>
-    										<Clear/>
-    									</BoxText>
-    									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
-    									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
-    								</BoxInner>
-    							</BoxPadding>
-    						</Box>
+  						<Box>
+  							<BoxPadding>
+  								<BoxDate>Q3<BoxDateSpan>2018</BoxDateSpan></BoxDate>
+  								<BoxInner>
+  									<BoxText>
+  										<img alt="Raindrop" src={process.env.PUBLIC_URL + "/images/raindrop.jpg"} />
+  										<Phase>Raindrop</Phase>
+  										<p>Raindrop is an authentication protocol which vastly improves upon current 2FA standards with decentralized public blockchain security for logins, transactions, and payments.</p>
+  										<Clear/>
+  									</BoxText>
+  									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
+  									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
+  								</BoxInner>
+  							</BoxPadding>
+  						</Box>
 
-    						<Box>
-    							<BoxPadding>
-    								<BoxDate>Q4<BoxDateSpan>2018</BoxDateSpan></BoxDate>
-    								<BoxInner>
-    									<BoxText>
-    										<img alt="Snowflake" src={process.env.PUBLIC_URL + "/images/snowflake.jpg"} />
-    										<h4 className="center bottom-padding-icons">Snowflake</h4>
-    										<p>Snowflake is an identity protocol designed to protect private data from identity theft.  Consumer data will be encrypted on the blockchain, frustrating hackers, and providing a major barrier to identity theft attempts.</p>
-    										<Clear/>
-    									</BoxText>
-    									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
-    									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
-    								</BoxInner>
-    							</BoxPadding>
-    						</Box>
+  						<Box>
+  							<BoxPadding>
+  								<BoxDate>Q4<BoxDateSpan>2018</BoxDateSpan></BoxDate>
+  								<BoxInner>
+  									<BoxText>
+  										<img alt="Snowflake" src={process.env.PUBLIC_URL + "/images/snowflake.jpg"} />
+  										<Phase>Snowflake</Phase>
+  										<p>Snowflake is an identity protocol designed to protect private data from identity theft.  Consumer data will be encrypted on the blockchain, frustrating hackers, and providing a major barrier to identity theft attempts.</p>
+  										<Clear/>
+  									</BoxText>
+  									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
+  									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
+  								</BoxInner>
+  							</BoxPadding>
+  						</Box>
 
-    						<Box>
-    							<BoxPadding>
-    								<BoxDate>Q1<BoxDateSpan>2019</BoxDateSpan></BoxDate>
-    								<BoxInner>
-    									<BoxText>
-    										<img alt="Ice" src={process.env.PUBLIC_URL + "/images/ice.jpg"} />
-    										<h4 className="center bottom-padding-icons">Ice</h4>
-    										<p>Ice is a document signing and verification protocol which will allow users to stamp, authenticate, verify and seal any document or contract that is sent.</p>
-    										<Clear/>
-    									</BoxText>
-    									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
-    									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
-    								</BoxInner>
-    							</BoxPadding>
-    						</Box>
+  						<Box>
+  							<BoxPadding>
+  								<BoxDate>Q1<BoxDateSpan>2019</BoxDateSpan></BoxDate>
+  								<BoxInner>
+  									<BoxText>
+  										<img alt="Ice" src={process.env.PUBLIC_URL + "/images/ice.jpg"} />
+  										<Phase>Ice</Phase>
+  										<p>Ice is a document signing and verification protocol which will allow users to stamp, authenticate, verify and seal any document or contract that is sent.</p>
+  										<Clear/>
+  									</BoxText>
+  									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
+  									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
+  								</BoxInner>
+  							</BoxPadding>
+  						</Box>
 
-    						<div className="clr-boxes"></div>
+  						<ClearBoxes />
 
-    						<Box>
-    							<BoxPadding>
-    								<BoxDate>Q2<BoxDateSpan>2019</BoxDateSpan></BoxDate>
-    								<BoxInner>
-    									<BoxText>
-    										<img alt="Tide" src={process.env.PUBLIC_URL + "/images/tide.jpg"} />
-    										<h4 className="center bottom-padding-icons">Tide</h4>
-    										<p>Tide is a payment protocol which will allow for one-click authorization of debit and credit POS transactions, as well as instantaneous p2p, p2b, and b2b payments across the blockchain.</p>
-    										<Clear/>
-    									</BoxText>
-    									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
-    									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
-    								</BoxInner>
-    							</BoxPadding>
-    						</Box>
+  						<Box>
+  							<BoxPadding>
+  								<BoxDate>Q2<BoxDateSpan>2019</BoxDateSpan></BoxDate>
+  								<BoxInner>
+  									<BoxText>
+  										<img alt="Tide" src={process.env.PUBLIC_URL + "/images/tide.jpg"} />
+  										<Phase>Tide</Phase>
+  										<p>Tide is a payment protocol which will allow for one-click authorization of debit and credit POS transactions, as well as instantaneous p2p, p2b, and b2b payments across the blockchain.</p>
+  										<Clear/>
+  									</BoxText>
+  									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
+  									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
+  								</BoxInner>
+  							</BoxPadding>
+  						</Box>
 
-    						<Box>
-    							<BoxPadding>
-    								<BoxDate>Q3<BoxDateSpan>2019</BoxDateSpan></BoxDate>
-    								<BoxInner>
-    									<BoxText>
-    										<img alt="Mist" src={process.env.PUBLIC_URL + "/images/mist.jpg"} />
-    										<h4 className="center bottom-padding-icons">Mist</h4>
-    										<p>Mist is an artificial intelligence protocol which will create industry best data modeling of high-speed transactions and fraud detection.</p>
-    										<Clear/>
-    									</BoxText>
-    									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
-    									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
-    								</BoxInner>
-    							</BoxPadding>
-    						</Box>
+  						<Box>
+  							<BoxPadding>
+  								<BoxDate>Q3<BoxDateSpan>2019</BoxDateSpan></BoxDate>
+  								<BoxInner>
+  									<BoxText>
+  										<img alt="Mist" src={process.env.PUBLIC_URL + "/images/mist.jpg"} />
+  										<Phase>Mist</Phase>
+  										<p>Mist is an artificial intelligence protocol which will create industry best data modeling of high-speed transactions and fraud detection.</p>
+  										<Clear/>
+  									</BoxText>
+  									<ButtonColor className="button color top-padding" href={process.env.PUBLIC_URL}>Learn More</ButtonColor>
+  									<ButtonGray className="button gray top-padding" target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL}><i className="far fa-file-alt"></i>Whitepaper</ButtonGray>
+  								</BoxInner>
+  							</BoxPadding>
+  						</Box>
 
-    						<Box>
-    							<BoxPadding>
-    								<BoxDate>Q4<BoxDateSpan>2019</BoxDateSpan></BoxDate>
-    								<BoxInner>
-    									<BoxText>
-    										<img alt="Mist" src={process.env.PUBLIC_URL + "/images/hail.jpg"} />
-    										<h4 className="center bottom-padding-icons">Hail</h4>
-    										<p>Coming Soon</p>
-    										<Clear/>
-    									</BoxText>
-    									<ButtonColor className="button color top-padding" target="_blank" rel="noopener noreferrer" href="https://github.com/HydroCommunity/Community-Brainstorming/issues/7">Learn More</ButtonColor>
+  						<Box>
+  							<BoxPadding>
+  								<BoxDate>Q4<BoxDateSpan>2019</BoxDateSpan></BoxDate>
+  								<BoxInner>
+  									<BoxText>
+  										<img alt="Mist" src={process.env.PUBLIC_URL + "/images/hail.jpg"} />
+  										<Phase>Hail</Phase>
+  										<p>Coming Soon</p>
+  										<Clear/>
+  									</BoxText>
+  									<ButtonColor className="button color top-padding" target="_blank" rel="noopener noreferrer" href="https://github.com/HydroCommunity/Community-Brainstorming/issues/7">Learn More</ButtonColor>
 
-    								</BoxInner>
-    							</BoxPadding>
-    						</Box>
+  								</BoxInner>
+  							</BoxPadding>
+  						</Box>
 
-    						<Clear/>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
+  						<Clear/>
+  					</Box3>
+  				</Center>
+  			</InnerWrapper>
+    	</Main>
     )
   }
 }
