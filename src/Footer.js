@@ -44,15 +44,14 @@ const FooterIcons = styled.div`
   flex-align: column;
 `
 const Menu = styled.div`
-  float:right;
-  margin-top: 12px;
-  float: left !important;
-  left: 50% !important;
-  margin: auto !important;
-  position: relative !important;
-  width: auto !important;
-  text-align:center;
-  background:#333;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  @media screen and (max-width: 935px){
+	   flex-direction: column;
+  }
 `
 const ListItem = styled.li`
   color:#fff;
@@ -65,9 +64,6 @@ const ListItem = styled.li`
   padding-bottom: 0px;
   margin-right: 4px;
   line-height: 27px;
-  float: left;
-  position: relative !important;
-  right: 50% !important;
   @media screen and (max-width: 935px){
 	   float:none;
      margin-bottom: -13px;
