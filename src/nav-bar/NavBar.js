@@ -197,7 +197,7 @@ class NavBar extends Component {
                     {isHome ? <StyledHref home href="https://hydro.gitbook.io/solidity/">Developers</StyledHref> : <StyledHref href="https://hydro.gitbook.io/solidity/">Developers</StyledHref>}
                   </ListItem>
                   <ListItem>
-                    {isHome ? <StyledLink home to="/dapps">dApps</StyledLink> : <StyledLink to="/dapps">dApps</StyledLink>}
+                    {isHome ? <StyledHref home href="https://noahhydro.github.io/snowflake-dashboard/">dApps</StyledHref> : <StyledHref href="https://noahhydro.github.io/snowflake-dashboard/">dApps</StyledHref>}
                   </ListItem>
                 </Menu>
                 <Clear />
