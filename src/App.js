@@ -7,8 +7,6 @@ import Roadmap from './roadmap/Roadmap';
 import Footer from './Footer';
 import Team from './Team';
 import Home from './Home';
-import Dapps from './Dapps';
-import Docs from './Docs';
 import { BrowserRouter as Router, Route } from "react-router-dom"
 
 library.add(fab, fas)
@@ -30,8 +28,6 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/roadmap" component={Roadmap} />
           <Route path="/team" component={Team} />
-          <Route path="/dapps" component={Dapps} />
-          <Route path="/documentation" component={Docs} />
           <Footer />
         </div>
       </Router>
