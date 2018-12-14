@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import Profile from './profiles/Profile';
+import styled from 'styled-components';
 
-const profileStyles = {
-  width: '100%',
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  flexWrap: "wrap",
-}
+const ProfileStyled = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+`
+
+const TeamSection = styled.div`
+  padding-bottom: 50px;
+`
 
 const teamMembers = [
   {
@@ -119,6 +124,16 @@ const daMembers = [
     github: "https://github.com/harshrajat",
     photoName:  "harsh.jpg",
     backgroundName: "mumbai.png"
+  },
+  {
+    name: "Talha Altınkaya",
+    teamrole: "Community & Social Media",
+    linkedIn: "https://www.linkedin.com/in/talhaaltinkaya/",
+    email: "talhaaltinkaya@gmail.com",
+    twitter: "https://twitter.com/talhaaltinkaya",
+    github: "https://github.com/talhaaltinkaya",
+    photoName:  "talha.jpg",
+    backgroundName: "pixels.jpg"
   }
 ]
 
@@ -139,27 +154,27 @@ class Team extends Component  {
     return (
       <>
         <h2 style={{width: "100%", textAlign: "center", marginTop: "100px"}}>Core Contributors</h2>
-        <section className="sections" id="team">
-          <div style={{...profileStyles}}>
+        <TeamSection>
+          <ProfileStyled>
             {teamMembers
               .map(a => ({sort: Math.random(), value: a}))
               .sort((a, b) => a.sort - b.sort)
               .map(a => a.value)
               .map(member => <Profile {...member} />)
             }
-          </div>
-        </section>
+          </ProfileStyled>
+        </TeamSection>
         <h2 style={{width: "100%", textAlign: "center"}}>Decentralization Ambassadors</h2>
-        <section className="sections" id="team">
-          <div style={{...profileStyles}}>
+        <TeamSection>
+          <ProfileStyled>
             {daMembers
               .map(a => ({sort: Math.random(), value: a}))
               .sort((a, b) => a.sort - b.sort)
               .map(a => a.value)
               .map(member => <Profile {...member} />)
             }
-          </div>
-        </section>
+          </ProfileStyled>
+        </TeamSection>
       </>
     )
   }
