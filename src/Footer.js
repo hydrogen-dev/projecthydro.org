@@ -129,6 +129,8 @@ class Footer extends Component {
   						<ListItem><ListLink href={process.env.PUBLIC_URL}>Contact</ListLink></ListItem>
   						<ListItem><ListLink href={process.env.PUBLIC_URL}>Terms of Service</ListLink></ListItem>
   						<ListItem><ListLink href={process.env.PUBLIC_URL}>Privacy Policy</ListLink></ListItem>
+              <ListItem><ListLink href="https://hydro.hs.app/communities/hydro"  target="_blank" rel="noopener noreferrer">Hydro Protocol Voting</ListLink></ListItem>
+              <ListItem><ListLink href={process.env.PUBLIC_URL}>By-Laws</ListLink></ListItem>
     				</Menu>
     				<Clear />
     			</Center>

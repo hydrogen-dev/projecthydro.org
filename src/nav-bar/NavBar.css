@@ -26,3 +26,18 @@
 .animateOut li a {
 	color:#fff !important;
 }
+
+.noanimation {
+	transform:none;
+}
+
+.menu-align.active {background:#20428e;display:block;margin-top: 0px;margin-right: 0px;float: none;width: 100%;z-index: 12; position: fixed;height:100%;}
+.menu-align.active .close-mobile {display:block;}
+.menu-align.active #menu {float:none;width:100%;margin-top:80px;}
+.menu-align.active #menu ul {padding-left:30px;padding-right:30px;margin-top:40px;}
+.menu-align.active #menu ul li {float:none;width:100%;text-align: center;}
+.menu-align.active #menu ul li a {width:100%;padding-left:0px;padding-right:0px;display:block;}
+.menu-align.active #menu ul li a:hover {background:#1c3773;}
+.menu-align.active .topmenu.button {margin-bottom: -48px;float: none;width: auto;margin-left: 30px;text-align: center;left: 0;position: relative;right: 0;display: block; margin-right: 30px;margin-top:95px;}
+
+.close-mobile {display:none;right: 21px;position: absolute;font-size: 30px;color:#fff;cursor:pointer;z-index:2px;}

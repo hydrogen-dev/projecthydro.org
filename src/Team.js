@@ -19,7 +19,7 @@ const teamMembers = [
     name: "Andy Chorlian",
     teamrole: "Protocol Developer",
     linkedIn: "https://www.linkedin.com/in/achorlia/",
-    email: "andy@hydrogenplatform.com",
+    email: "andychorlian@gmail.com",
     twitter: "https://twitter.com/andy8052",
     github: "https://github.com/AndyHydro",
     photoName:  "andy.jpeg",
@@ -134,7 +134,18 @@ const daMembers = [
     github: "https://github.com/talhaaltinkaya",
     photoName:  "talha.jpg",
     backgroundName: "pixels.jpg"
+  },
+  {
+    name: "Tim Allard",
+    teamrole: "HCDP / Development",
+    linkedIn: "https://www.linkedin.com/in/timallard/",
+    email: "tim@projecthydro.org",
+    twitter: "https://twitter.com/TimAllard",
+    github: "https://github.com/mitdralla",
+    photoName:  "tim.jpg",
+    backgroundName: "cave.png"
   }
+
 ]
 
 // A blank to copy from for new people because I am lazy

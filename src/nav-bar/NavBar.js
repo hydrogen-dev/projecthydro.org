@@ -144,6 +144,16 @@ class NavBar extends Component {
     window.removeEventListener('scroll', this.handler);
   }
 
+  show_mobile_menu = () => {
+  	document.getElementById("mobile-class").className = "banner-wrapper noanimation";
+  	document.getElementById("menu-mobile").className = "menu-align active";
+  }
+
+  hide_mobile_menu = () => {
+  	document.getElementById("menu-mobile").className = "menu-align notactive";
+  	document.getElementById("mobile-class").className = "banner-wrapper";
+  }
+
   handler = () => {
     const bannerWrapper = document.querySelector('.banner-wrapper');
     const banner = document.querySelector('.banner');
@@ -175,7 +185,7 @@ class NavBar extends Component {
     return (
       <>
       <Container>
-        <BannerWrapper className="banner-wrapper">
+        <BannerWrapper className="banner-wrapper" id="mobile-class">
           <Banner className="banner">
             <MenuWrap>
               <Logo className="logo">
@@ -184,8 +194,9 @@ class NavBar extends Component {
                 </Link>
               </Logo>
 
-              <ShowMobile icon={['fas', 'bars']} />
-              <MenuAlign className="menu-align">
+              <ShowMobile icon={['fas', 'bars']} onClick={this.show_mobile_menu} />
+              <MenuAlign className="menu-align" id="menu-mobile">
+                <FontAwesomeIcon icon={['fas', 'times']} className="close-mobile" onClick={this.hide_mobile_menu}/>
                 <Menu>
                   <ListItem>
                     {isHome ? <StyledLink home to="/roadmap">Roadmap</StyledLink> : <StyledLink to="/roadmap">Roadmap</StyledLink>}
