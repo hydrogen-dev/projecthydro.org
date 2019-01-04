@@ -160,7 +160,7 @@ class Header extends Component {
           <Intro>
             <Title>Security & Identity on the Blockchain</Title>
             <br/>
-            <Subtitle>Hydro is a decentralized ecosystem using cutting-edge cryptography to secure user accounts, identites, and transactions.</Subtitle>
+            <Subtitle>Hydro is a decentralized ecosystem using cutting-edge cryptography to secure user accounts, identities, and transactions.</Subtitle>
 
             <br/><br/>
 

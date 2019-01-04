@@ -113,7 +113,7 @@ class Footer extends Component {
     				<br/>
     				<FooterIcons>
     					<Link href="https://www.facebook.com/hydrocommunitypage/" target="_blank" rel="noopener noreferrer"><FAICustom icon={['fab', 'facebook']} /></Link>
-    					<Link href="https://twitter.com/HydroCommunity" target="_blank" rel="noopener noreferrer"><FAICustom icon={['fab', 'twitter']} /></Link>
+    					<Link href="https://twitter.com/HydroBlockchain" target="_blank" rel="noopener noreferrer"><FAICustom icon={['fab', 'twitter']} /></Link>
     					<Link href="https://medium.com/hydrogen-api" target="_blank" rel="noopener noreferrer"><FAICustom icon={['fab', 'medium']} /></Link>
     					<Link href="https://discordapp.com/invite/SbW5Feg" target="_blank" rel="noopener noreferrer"><FAICustom icon={['fab', 'discord']} /></Link>
     					<Link href="https://t.me/projecthydro" target="_blank" rel="noopener noreferrer"><FAICustom icon={['fab', 'telegram']} /></Link>
